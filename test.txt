@@ -1,0 +1,47 @@
+#include <stdio.h>
+int main()
+{
+    int a;
+    float b,c,d,e;
+    printf("请选择需要进行温度转换的模式：1摄氏度转华氏度 2华氏度转摄氏度\n");
+     scanf("d%",&a);
+     switch (a)
+     {
+     case 1:
+         printf("请输入温度值：");
+         scanf("f%",&b);
+         c = (9 / 5) * b + 32;
+         printf("华氏度为：%.2f\n", c);
+         break;
+     case 2:
+         printf("请输入温度值：");
+         scanf("f%",d);
+         e = 5 * (b - 32) / 9.0;
+         printf("摄氏度为：%.2f\n", e);
+         break;
+     default:printf("请重新输入\n");
+     }
+
+}
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    float b,c,d,e;
+    printf("请选择需要进行温度转换的模式：1摄氏度转华氏度 2华氏度转摄氏度\n");
+     scanf("d%",&a);
+     if(a==1)
+	 { printf("请输入温度值：");
+         scanf("f%",&b);
+         c = (9 / 5) * b + 32;
+         printf("华氏度为：%.2f\n", c);}
+     else if(a==2)
+	 {  printf("请输入温度值：");
+         scanf("f%",&d);
+         e = 5 * (d - 32) / 9.0;
+         printf("摄氏度为：%.2f\n", e);}
+    
+  
+
+}
